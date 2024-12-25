@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewData["Title"] = "Show";
+    Product product = ViewBag.product as Product;
+}
+
+<h1>Show</h1>
+<h3>@ViewBag.name</h3>
+<h3>@ViewBag.surname</h3>
+<h3>@product.Id----@product.Name----@product.Price</h3>
+<a class="btn btn-outline-warning" asp-controller="Product" asp-action="Remove">Cache silme</a>
